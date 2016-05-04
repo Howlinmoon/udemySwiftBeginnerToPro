@@ -12,6 +12,7 @@
 		9655A9F71CD8AC7500CD74F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9655A9F51CD8AC7500CD74F8 /* Main.storyboard */; };
 		9655A9F91CD8AC7500CD74F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9655A9F81CD8AC7500CD74F8 /* Assets.xcassets */; };
 		9655A9FC1CD8AC7600CD74F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9655A9FA1CD8AC7600CD74F8 /* LaunchScreen.storyboard */; };
+		96B09F561CDA5935005F3D7E /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96B09F551CDA5935005F3D7E /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9655A9F81CD8AC7500CD74F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9655A9FB1CD8AC7600CD74F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9655A9FD1CD8AC7600CD74F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B09F551CDA5935005F3D7E /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				9655A9F31CD8AC7500CD74F8 /* ViewController.swift */,
 				9655A9F51CD8AC7500CD74F8 /* Main.storyboard */,
 				9655A9F81CD8AC7500CD74F8 /* Assets.xcassets */,
+				96B09F551CDA5935005F3D7E /* Minecraft.ttf */,
 				9655A9FA1CD8AC7600CD74F8 /* LaunchScreen.storyboard */,
 				9655A9FD1CD8AC7600CD74F8 /* Info.plist */,
 			);
@@ -124,6 +127,7 @@
 			files = (
 				9655A9FC1CD8AC7600CD74F8 /* LaunchScreen.storyboard in Resources */,
 				9655A9F91CD8AC7500CD74F8 /* Assets.xcassets in Resources */,
+				96B09F561CDA5935005F3D7E /* Minecraft.ttf in Resources */,
 				9655A9F71CD8AC7500CD74F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +290,7 @@
 				9655AA021CD8AC7600CD74F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
