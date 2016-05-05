@@ -1,8 +1,7 @@
 # udemySwiftBeginnerToPro
 
 Let off at:
-https://www.udemy.com/ios9-swift/learn/v4/t/lecture/3375308
+https://www.udemy.com/ios9-swift/learn/v4/t/lecture/3382886
 
-30:00 mark
-
+Exercise time!
 
