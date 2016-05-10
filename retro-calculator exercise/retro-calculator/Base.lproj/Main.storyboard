@@ -144,7 +144,7 @@
                                                 </constraints>
                                                 <state key="normal" image="1"/>
                                                 <connections>
-                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchDragInside" id="4M8-er-sfR"/>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FOL-30-hgy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9j-G1-jho">
@@ -254,6 +254,9 @@
                                             <constraint firstAttribute="height" constant="54" id="hXR-rZ-MJj"/>
                                         </constraints>
                                         <state key="normal" image="clear"/>
+                                        <connections>
+                                            <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AR9-q2-wL5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -284,6 +287,9 @@
                             <constraint firstItem="UIL-jE-T5n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zaI-6c-DRO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="C2G-ZB-F6N" id="s6V-Od-5C5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

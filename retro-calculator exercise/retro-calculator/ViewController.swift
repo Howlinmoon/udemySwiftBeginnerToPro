@@ -19,14 +19,15 @@ class ViewController: UIViewController {
         case Empty = "Empty"
     }
     
-    @IBOutlet weak var outputLbl: UILabel!
     
-    var btnSound: AVAudioPlayer!
     
+    @IBOutlet weak var outputLabel: UILabel!
+
     // accumulator
-    var runningNumber = ""
-    var leftValStr = ""
-    var rightValStr = ""
+    var btnSound: AVAudioPlayer!
+    var runningNumber = "0"
+    var leftValStr = "0"
+    var rightValStr = "0"
     var currentOperation: Operation = Operation.Empty
     var result = ""
     
@@ -49,12 +50,16 @@ class ViewController: UIViewController {
     @IBAction func numberPressed(btn: UIButton!) {
         playSound()
         print("button pressed: \(btn.tag)")
-        
-        runningNumber += "\(btn.tag)"
-        outputLbl.text = runningNumber
+        if Double(runningNumber) != 0 {
+            runningNumber += "\(btn.tag)"
+        } else{
+            runningNumber = "\(btn.tag)"
+        }
+        outputLabel.text = runningNumber
     }
     
     @IBAction func onDividePressed(sender: AnyObject) {
+        print("Divide was pressed")
         processOperation(Operation.Divide)
     }
     
@@ -74,26 +79,51 @@ class ViewController: UIViewController {
     
     @IBAction func onEqualsPressed(sender: AnyObject) {
         processOperation(currentOperation)
+        // clear the current operation
+        currentOperation = Operation.Empty
+    }
+    
+    
+    @IBAction func clearPressed(sender: AnyObject) {
+        playSound()
+        print("Clear button pressed")
+        // Try to restore to power up configuration
+        rightValStr = "0"
+        leftValStr = "0"
+        runningNumber = "0"
+        outputLabel.text = "0"
+        currentOperation = Operation.Empty
     }
     
     
     func processOperation(op: Operation) {
         playSound()
+        var displayingError = false
+        
+        print("processing operation: \(currentOperation)")
         
         if currentOperation != Operation.Empty {
             // Run some math
             
-            // If user pressed two operators in a row, runningNumber is ""...
+            // If user pressed two operators in a row, runningNumber is "0"...
             
-            if runningNumber != "" {
+            if runningNumber != "0" {
                 rightValStr = runningNumber
-                runningNumber = ""
+                runningNumber = "0"
                 
                 if currentOperation == Operation.Multiply {
                     result = "\(Double(leftValStr)! * Double(rightValStr)!)"
                     
                 } else if currentOperation == Operation.Divide {
-                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                    print("Processing division, rightValStr = \(rightValStr)")
+                    if Double(rightValStr) != 0 {
+                        result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                    } else {
+                        playSound()
+                        outputLabel.text = "/0 ERROR"
+                        displayingError = true
+                        result = "0"
+                    }
                     
                 } else if currentOperation == Operation.Subtract {
                     result = "\(Double(leftValStr)! - Double(rightValStr)!)"
@@ -104,7 +134,12 @@ class ViewController: UIViewController {
                 
                 // store current result
                 leftValStr = result
-                outputLbl.text = result
+                // output the result  - assuming it is not our error message
+                if displayingError == false {
+                    outputLabel.text = result
+                } else {
+                    print("output suppressed due to error message")
+                }
                 
             }
             
@@ -114,9 +149,9 @@ class ViewController: UIViewController {
             // this is the first time an operator has been pressed
             // save the current accumulator value
             leftValStr = runningNumber
-            runningNumber = ""
+            runningNumber = "0"
             currentOperation = op
-            
+            print("Operation was empty...")
         }
     }
     
