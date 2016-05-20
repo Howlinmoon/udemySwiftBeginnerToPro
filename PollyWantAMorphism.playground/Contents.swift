@@ -78,3 +78,15 @@ class AngryTroll: Enemy {
     }
 }
 
+var newTroll = AngryTroll(hp: 120, attack: 25)
+print("New Troll has \(newTroll.hp) hit points left")
+
+// attack the troll
+
+newTroll.defendAttack(7)
+
+print("New Troll has \(newTroll.hp) hit points left")
+
+newTroll.defendAttack(14)
+print("New Troll has \(newTroll.hp) hit points left")
+
