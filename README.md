@@ -1,8 +1,7 @@
 # udemySwiftBeginnerToPro
 
 Let off at:
-https://www.udemy.com/ios9-swift/learn/v4/t/lecture/3383158
+https://www.udemy.com/ios9-swift/learn/v4/t/lecture/3383072
 
-Starting a new app using Classes
+Time for a challenge!
 
-Continue at: 56:00 (HP is not decrementing)
