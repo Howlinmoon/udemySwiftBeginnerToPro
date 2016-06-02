@@ -71,18 +71,18 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="fNg-G6-cGh">
-                                <rect key="frame" x="-80" y="152" width="509" height="448"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="uiv-Yf-JaQ">
+                                <rect key="frame" x="128" y="284" width="345" height="284"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="448" id="df8-PJ-EXA"/>
-                                    <constraint firstAttribute="width" constant="509" id="ftV-mX-0Fy"/>
+                                    <constraint firstAttribute="height" constant="284" id="gcf-a3-2CL"/>
+                                    <constraint firstAttribute="width" constant="345" id="m3e-wT-Bnz"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LQ7-gZ-TWa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2lt-de-vdn"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fNg-G6-cGh" secondAttribute="bottom" id="3Uq-EN-TFu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uiv-Yf-JaQ" secondAttribute="bottom" constant="32" id="8qF-4T-Qe9"/>
                             <constraint firstItem="nLn-bd-jpo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BHN-9H-JPl"/>
                             <constraint firstItem="LQ7-gZ-TWa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="C5a-XI-6gM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G6n-p6-5yE" secondAttribute="bottom" id="PgZ-sm-9ij"/>
@@ -94,10 +94,13 @@
                             <constraint firstAttribute="trailing" secondItem="nLn-bd-jpo" secondAttribute="trailing" id="pEI-F0-waG"/>
                             <constraint firstItem="C5L-Y0-gzf" firstAttribute="centerX" secondItem="LQ7-gZ-TWa" secondAttribute="centerX" id="rKP-3S-FHF"/>
                             <constraint firstItem="nLn-bd-jpo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s0d-l1-mhk"/>
+                            <constraint firstItem="uiv-Yf-JaQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sPA-h7-at0"/>
                             <constraint firstItem="G6n-p6-5yE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vkd-S5-jGe"/>
-                            <constraint firstItem="fNg-G6-cGh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-100" id="xTW-rE-SRG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="monsterImg" destination="nLn-bd-jpo" id="ooU-7w-gQW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,7 +112,7 @@
         <image name="food" width="95" height="98"/>
         <image name="ground" width="1444" height="151"/>
         <image name="heart" width="95" height="98"/>
-        <image name="idle1" width="889" height="615"/>
+        <image name="idle1" width="579" height="411"/>
         <image name="livespanel" width="468" height="137"/>
         <image name="skull" width="95" height="98"/>
     </resources>
