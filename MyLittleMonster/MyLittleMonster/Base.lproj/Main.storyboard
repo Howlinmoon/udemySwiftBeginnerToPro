@@ -60,17 +60,6 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="AsI-fX-Kje">
-                                <rect key="frame" x="155" y="94" width="290" height="98"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iHeart" translatesAutoresizingMaskIntoConstraints="NO" id="AB8-P3-vh9">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="AQz-TC-86e">
-                                        <rect key="frame" x="195" y="0.0" width="95" height="98"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-3W-SYh" userLabel="monsterImg">
                                 <rect key="frame" x="128" y="304" width="345" height="249"/>
                                 <constraints>
@@ -78,6 +67,17 @@
                                     <constraint firstAttribute="height" constant="249" id="p4P-Ox-Y58"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="AsI-fX-Kje">
+                                <rect key="frame" x="155" y="94" width="290" height="98"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iHeart" translatesAutoresizingMaskIntoConstraints="NO" id="AB8-P3-vh9" customClass="DragImg" customModule="MyLittleMonster" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="AQz-TC-86e" customClass="DragImg" customModule="MyLittleMonster" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -99,6 +99,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="foodImg" destination="AQz-TC-86e" id="jEc-Cp-ESd"/>
+                        <outlet property="heartImg" destination="AB8-P3-vh9" id="f6P-p2-7y4"/>
                         <outlet property="monsterImg" destination="tsf-3W-SYh" id="zx3-7c-RRw"/>
                     </connections>
                 </viewController>

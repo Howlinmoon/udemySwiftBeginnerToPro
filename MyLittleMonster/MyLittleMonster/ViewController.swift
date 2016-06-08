@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
   
     @IBOutlet weak var monsterImg: UIImageView!
+    @IBOutlet weak var foodImg: UIImageView!
+    @IBOutlet weak var heartImg: UIImageView!
     
     
     override func viewDidLoad() {
@@ -30,7 +32,6 @@ class ViewController: UIViewController {
         monsterImg.startAnimating()
     
     }
-
 
 
 }
