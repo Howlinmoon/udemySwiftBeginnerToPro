@@ -1,7 +1,6 @@
 # udemySwiftBeginnerToPro
 
 Let off at:
-https://www.udemy.com/ios9-swift/learn/v4/t/lecture/3420650
+https://www.udemy.com/ios9-swift/learn/v4/t/lecture/3383172
 
-continue at: 10:00
-
+Starting new project - Model View Controller
