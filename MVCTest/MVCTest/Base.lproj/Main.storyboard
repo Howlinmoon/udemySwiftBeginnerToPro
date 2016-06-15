@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVCTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpH-y4-6nC">
+                                <rect key="frame" x="173" y="61" width="282" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="282" id="RUn-r5-w9o"/>
+                                    <constraint firstAttribute="height" constant="89" id="bx7-el-m1Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="xmas_kitten" translatesAutoresizingMaskIntoConstraints="NO" id="RPs-d8-ewr" customClass="RoundedImageView" customModule="MVCTest" customModuleProvider="target">
+                                <rect key="frame" x="167" y="256" width="294" height="226"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="226" id="6zy-4f-g2i"/>
+                                    <constraint firstAttribute="width" constant="294" id="wTw-Fo-UPG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edg-Qa-pjD">
+                                <rect key="frame" x="262" y="526" width="77" height="30"/>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="renamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWX-xe-nbJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T5r-Ap-x6Y">
+                                <rect key="frame" x="167" y="148" width="294" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="0lv-8h-fPD"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZAO-3H-Abw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RPs-d8-ewr" firstAttribute="top" secondItem="BpH-y4-6nC" secondAttribute="bottom" constant="106" id="DQU-bB-Lry"/>
+                            <constraint firstItem="BpH-y4-6nC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ow5-iA-sFa"/>
+                            <constraint firstItem="T5r-Ap-x6Y" firstAttribute="top" secondItem="BpH-y4-6nC" secondAttribute="bottom" id="YLN-01-Qlu"/>
+                            <constraint firstItem="BpH-y4-6nC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="iXQ-rs-R5i"/>
+                            <constraint firstItem="T5r-Ap-x6Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yRw-H5-nA2"/>
+                            <constraint firstItem="RPs-d8-ewr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z2k-Yg-gvb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="renameField" destination="T5r-Ap-x6Y" id="RLS-A8-0di"/>
+                        <outlet property="theLabel" destination="BpH-y4-6nC" id="8Me-P3-R4N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmas_kitten" width="540" height="734"/>
+    </resources>
+</document>
