@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="size_classes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="kVC-1K-aXU">
+                                <rect key="frame" x="180" y="58" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="APV-xA-dGe"/>
+                                    <constraint firstAttribute="width" constant="243" id="iET-r7-Xz2"/>
+                                    <constraint firstAttribute="height" constant="179" id="rh2-Rc-ebg"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="APV-xA-dGe"/>
+                                        <exclude reference="iET-r7-Xz2"/>
+                                        <exclude reference="rh2-Rc-ebg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="iET-r7-Xz2"/>
+                                        <include reference="rh2-Rc-ebg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="APV-xA-dGe"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpj-nP-j7g">
+                                <rect key="frame" x="180" y="221" width="245" height="254"/>
+                                <string key="text">Professional wrestler and actor Dwayne "The Rock" Douglas Johnson was born on May 2, 1972, in Hayward, California. The grandson of professional wrestler Peter "High Chief" Fanene Maivia and son of wrestler Rocky Johnson, the young Johnson grew up watching his father perform in the ring. But with no plans to follow in his footsteps, Johnson played college football at the University of Miami where he had great success until a back injury cost him a spot in the NFL.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="221" width="560" height="254"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kVC-1K-aXU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0Yx-Le-TtO"/>
+                            <constraint firstItem="zpj-nP-j7g" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="65N-fP-Rqm"/>
+                            <constraint firstItem="kVC-1K-aXU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9uc-pd-xES"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zpj-nP-j7g" secondAttribute="bottom" constant="20" id="DqE-Tx-RLj"/>
+                            <constraint firstItem="kVC-1K-aXU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="J5z-B4-JYB"/>
+                            <constraint firstItem="zpj-nP-j7g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="UfA-J8-m8L"/>
+                            <constraint firstItem="kVC-1K-aXU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VsB-ES-MSj"/>
+                            <constraint firstItem="zpj-nP-j7g" firstAttribute="top" secondItem="kVC-1K-aXU" secondAttribute="bottom" constant="35" id="Xx1-c3-Dge"/>
+                            <constraint firstItem="kVC-1K-aXU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZNT-8t-cbx"/>
+                            <constraint firstItem="zpj-nP-j7g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bgW-81-BUV"/>
+                            <constraint firstItem="zpj-nP-j7g" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fp5-R0-WIX"/>
+                            <constraint firstItem="zpj-nP-j7g" firstAttribute="leading" secondItem="kVC-1K-aXU" secondAttribute="trailing" constant="28" id="mqo-q1-rll"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Yx-Le-TtO"/>
+                                <exclude reference="9uc-pd-xES"/>
+                                <exclude reference="J5z-B4-JYB"/>
+                                <exclude reference="VsB-ES-MSj"/>
+                                <exclude reference="ZNT-8t-cbx"/>
+                                <exclude reference="65N-fP-Rqm"/>
+                                <exclude reference="UfA-J8-m8L"/>
+                                <exclude reference="Xx1-c3-Dge"/>
+                                <exclude reference="bgW-81-BUV"/>
+                                <exclude reference="fp5-R0-WIX"/>
+                                <exclude reference="mqo-q1-rll"/>
+                                <exclude reference="DqE-Tx-RLj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="9uc-pd-xES"/>
+                                <include reference="ZNT-8t-cbx"/>
+                                <include reference="UfA-J8-m8L"/>
+                                <include reference="fp5-R0-WIX"/>
+                                <include reference="mqo-q1-rll"/>
+                                <include reference="DqE-Tx-RLj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="0Yx-Le-TtO"/>
+                                <include reference="J5z-B4-JYB"/>
+                                <include reference="VsB-ES-MSj"/>
+                                <include reference="65N-fP-Rqm"/>
+                                <include reference="Xx1-c3-Dge"/>
+                                <include reference="bgW-81-BUV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="355.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rock" width="1853" height="1341"/>
+    </resources>
+</document>

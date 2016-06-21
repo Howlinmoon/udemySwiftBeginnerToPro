@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SizeClassesExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-Cq-bi9">
+                                <rect key="frame" x="60" y="52" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.97758129630000001" blue="0.19500245390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kSY-1l-nhk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kSY-1l-nhk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="86" y="61" width="240" height="128"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="kSY-1l-nhk"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gDZ-EC-riM">
+                                <rect key="frame" x="98" y="279" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="9lu-F5-y95"/>
+                                    <constraint firstAttribute="height" constant="121" id="DV2-Bn-rwW"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9lu-F5-y95"/>
+                                        <exclude reference="DV2-Bn-rwW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="9lu-F5-y95"/>
+                                        <include reference="DV2-Bn-rwW"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8K1-SU-hxn">
+                                <rect key="frame" x="398" y="61" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="Vwh-xS-xhc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vwh-xS-xhc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="207" y="136" width="240" height="128"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Vwh-xS-xhc"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJE-gV-IKw">
+                                <rect key="frame" x="225" y="442" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="263" y="19" width="240" height="212"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="78" y="263" width="159" height="135"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.1808914308" blue="0.16471305929999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gDZ-EC-riM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1eX-9n-Wrd"/>
+                            <constraint firstItem="yhb-Cq-bi9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Gbz-zg-PRW"/>
+                            <constraint firstItem="8K1-SU-hxn" firstAttribute="leading" secondItem="gDZ-EC-riM" secondAttribute="trailing" constant="8" id="RWO-cm-hCq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yhb-Cq-bi9" secondAttribute="bottom" constant="31" id="WNV-bq-10v"/>
+                            <constraint firstItem="8K1-SU-hxn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ep9-sF-jV4"/>
+                            <constraint firstItem="8K1-SU-hxn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gHy-kQ-Lg4"/>
+                            <constraint firstItem="gDZ-EC-riM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hP1-bm-dm0"/>
+                            <constraint firstItem="yhb-Cq-bi9" firstAttribute="top" secondItem="8K1-SU-hxn" secondAttribute="bottom" constant="13" id="z1V-G2-0Wb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1eX-9n-Wrd"/>
+                                <exclude reference="hP1-bm-dm0"/>
+                                <exclude reference="RWO-cm-hCq"/>
+                                <exclude reference="ep9-sF-jV4"/>
+                                <exclude reference="gHy-kQ-Lg4"/>
+                                <exclude reference="WNV-bq-10v"/>
+                                <exclude reference="Gbz-zg-PRW"/>
+                                <exclude reference="z1V-G2-0Wb"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="1eX-9n-Wrd"/>
+                                <include reference="hP1-bm-dm0"/>
+                                <include reference="RWO-cm-hCq"/>
+                                <include reference="ep9-sF-jV4"/>
+                                <include reference="gHy-kQ-Lg4"/>
+                                <include reference="WNV-bq-10v"/>
+                                <include reference="Gbz-zg-PRW"/>
+                                <include reference="z1V-G2-0Wb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304" y="357"/>
+        </scene>
+    </scenes>
+</document>
