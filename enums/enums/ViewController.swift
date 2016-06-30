@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    enum Cars: String {
-        case PORSCHE = "Porsche"
-        case CHEVY = "Chevy"
-        case PONTIAC = "Pontiac"
-        case TESLA = "Tesla"
+    @IBOutlet weak var theLabel: UILabel!
+    
+    enum Cars: Int {
+        case PORSCHE = 0
+        case CHEVY = 1
+        case PONTIAC = 2
+        case TESLA = 3
     }
 
     
@@ -24,16 +26,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        var car1 = Cars.PORSCHE
-        var car2 = Cars.PONTIAC
-        
-        if car1.rawValue == car2.rawValue {
-            
-        }
-        
-        carOfChoice = Cars.TESLA
-        print(carOfChoice)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +33,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func onBtnTapped(sender: UIButton!) {
+    
+        if sender.tag == Cars.PORSCHE.rawValue {
+            theLabel.text = "Porsche 911 - cool!"
+        } else if sender.tag == Cars.CHEVY.rawValue {
+            theLabel.text = "Chevy Camaro - Classic cool!"
+        } else if sender.tag == Cars.PONTIAC.rawValue {
+            theLabel.text = "Pontiac Trans-AM Smokey!"
+        } else if sender.tag == Cars.TESLA.rawValue {
+            theLabel.text = "Tesla - The future is here!"
+        }
+        
+    }
 
 }
 

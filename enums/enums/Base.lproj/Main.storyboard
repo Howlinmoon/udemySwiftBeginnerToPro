@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,89 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5R-Le-9V3">
+                                <rect key="frame" x="224" y="10" width="160" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1W7-xB-eT7"/>
+                                    <constraint firstAttribute="width" constant="160" id="ryG-Ev-QJK"/>
+                                </constraints>
+                                <state key="normal" image="Porsche"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVd-48-ask"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d61-cZ-Cfm">
+                                <rect key="frame" x="224" y="120" width="160" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="kCM-pc-JQ3"/>
+                                    <constraint firstAttribute="width" constant="160" id="qpY-9e-L69"/>
+                                </constraints>
+                                <state key="normal" image="chevy"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAC-CR-0rh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-9P-dHn">
+                                <rect key="frame" x="224" y="230" width="160" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Gmr-Sm-2dU"/>
+                                    <constraint firstAttribute="height" constant="100" id="QCg-XY-hQ5"/>
+                                </constraints>
+                                <state key="normal" image="pontiac"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDf-TS-ukC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAv-cp-zJ9">
+                                <rect key="frame" x="224" y="340" width="160" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="2H1-Ej-Fi6"/>
+                                    <constraint firstAttribute="height" constant="100" id="cSk-0I-dD5"/>
+                                </constraints>
+                                <state key="normal" image="tesla"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9R-EK-d8X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7g-DY-6tP">
+                                <rect key="frame" x="153" y="477" width="295" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="c5L-ir-uAm"/>
+                                    <constraint firstAttribute="width" constant="295" id="ouu-Mk-aO7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V5R-Le-9V3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BJ2-UG-a1M"/>
+                            <constraint firstItem="bhO-9P-dHn" firstAttribute="top" secondItem="d61-cZ-Cfm" secondAttribute="bottom" constant="10" id="G5R-Uk-Y60"/>
+                            <constraint firstItem="t7g-DY-6tP" firstAttribute="top" secondItem="mAv-cp-zJ9" secondAttribute="bottom" constant="37" id="Hky-OM-iFl"/>
+                            <constraint firstItem="mAv-cp-zJ9" firstAttribute="top" secondItem="bhO-9P-dHn" secondAttribute="bottom" constant="10" id="P7l-4r-7bd"/>
+                            <constraint firstItem="d61-cZ-Cfm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Srf-qH-dGo"/>
+                            <constraint firstItem="bhO-9P-dHn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wt6-JA-5KR"/>
+                            <constraint firstItem="V5R-Le-9V3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="ftD-Z2-rjz"/>
+                            <constraint firstItem="d61-cZ-Cfm" firstAttribute="top" secondItem="V5R-Le-9V3" secondAttribute="bottom" constant="10" id="iPz-fK-YEH"/>
+                            <constraint firstItem="mAv-cp-zJ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kzk-uu-pcS"/>
+                            <constraint firstItem="t7g-DY-6tP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ucl-6g-rt8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theLabel" destination="t7g-DY-6tP" id="uWP-HS-pc0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="360" y="357"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Porsche" width="800" height="489"/>
+        <image name="chevy" width="640" height="426"/>
+        <image name="pontiac" width="542" height="286"/>
+        <image name="tesla" width="2647" height="1600"/>
+    </resources>
 </document>
