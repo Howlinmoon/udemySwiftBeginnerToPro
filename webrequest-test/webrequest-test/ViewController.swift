@@ -59,8 +59,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func loadRumors(sender: AnyObject) {
-        print("Loading bigorc.com")
-        loadRequest("https://www.bigorc.com/")
+        print("Loading Mac Rumors")
+        loadRequest("https://www.macrumors.com/")
     }
     
     
