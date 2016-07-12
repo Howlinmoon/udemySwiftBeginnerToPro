@@ -1,9 +1,8 @@
 # udemySwiftBeginnerToPro
 
 Let off at:
-https://www.udemy.com/ios9-swift/learn/v4/t/lecture/3383250
+https://www.udemy.com/ios9-swift/learn/v4/t/lecture/3383636
 
-12:00
 
 
 
